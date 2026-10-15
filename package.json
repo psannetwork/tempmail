@@ -1,0 +1,36 @@
+{
+  "name": "temp-mail-server",
+  "version": "1.0.0",
+  "description": "Self-hosted temporary mail server using Hono and Cloudflare Tunnel",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "hono",
+    "temp-mail",
+    "cloudflare-tunnel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@hono/node-server": "^2.1.5",
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^18.0.8",
+    "hono": "^4.13.13",
+    "nodemailer": "^10.1.1",
+    "postal-mime": "^4.0.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26.6.5",
+    "@types/nodemailer": "^8.0.2",
+    "tsx": "^4.19.0",
+    "typescript": "^7.0.2",
+    "vitest": "^2.1.0"
+  }
+}
